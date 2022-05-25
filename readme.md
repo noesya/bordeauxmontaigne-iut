@@ -1,4 +1,4 @@
-# IUT Bordeaux Montaigne
+# IUT Bordeaux Montaigne V1
 
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/61e0a98a/u-bordeaux-montaigne)
 

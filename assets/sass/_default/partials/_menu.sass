@@ -1,19 +1,31 @@
 .menu
     @extend .menu-expand
     @include media-breakpoint-down(lg)
-        margin-left: -1rem
-        margin-right: -1rem
-        > ul li,
+        > div > ul
+            margin-left: -1rem
+            margin-right: -1rem
+        > div > ul li,
         .nav-level-1 > .has-children li
             a,
             span
                 padding-left: 1rem
                 padding-right: 1rem
-        > ul li
+        > div > ul li
             a,
             span
                 padding-bottom: 1rem
                 padding-top: 1rem
+
+    .has-children
+        .dropdown-menu
+            @include media-breakpoint-up(lg)
+                background-color: $institute-color
+                color: white
+            .dropdown-item,
+            p a,
+            li a,
+            li span
+                color: white
 
     .nav-level-1
         > li

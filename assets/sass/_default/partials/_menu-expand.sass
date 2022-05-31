@@ -1,23 +1,18 @@
 .menu-expand
 
-    .has-children
-        .dropdown-menu
-            background-color: $institute-color
-            color: white
-            .dropdown-item,
-            p a,
-            li a,
-            li span
-                color: white
-
     .item-page-program
         .dropdown-menu
-            background-color: $program-color
+            @include media-breakpoint-up(lg)
+                background-color: $program-color
 
     .dropdown-menu
         > p
             @extend .container
-            @extend .h1
+            font-size: $h2-font-size
+            font-weight: $headings-font-weight
+            line-height: $headings-line-height
+            @include media-breakpoint-up(lg)
+                font-size: $h1-font-size
             a
                 display: inline-block
                 margin-left: 0
